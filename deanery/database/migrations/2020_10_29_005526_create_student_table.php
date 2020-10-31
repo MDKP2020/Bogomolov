@@ -18,6 +18,7 @@ class CreateStudentTable extends Migration
             $table->string('name');
             $table->date('dateOfStartLearning');
             $table->date('dateOfEndLearning');
+            $table->boolean('exclude'); //статус отчисления true-отчислен/false-учится
 
             //создание поля для связывания с таблицей group
             $table->integer('group_id')->unsigned()->default(1);
