@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 
 class CoursesController extends Controller
 {
-    public function coursesPage($id)
+    public function prinPage()
     {
-        return view('courses', ['courses' => Courses::findOrFail($id)]);
+        return view('prin');
     }
 }

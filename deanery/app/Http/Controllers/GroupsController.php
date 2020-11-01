@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class GroupsController extends Controller
 {
-    public function groupsPage($id) {
-        return view('groups', ['groups' => Groups::findOrFail($id)]);
+    public function prin4Page()
+    {
+        return view('prin4');
     }
 }
