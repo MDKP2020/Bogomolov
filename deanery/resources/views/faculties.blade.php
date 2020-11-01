@@ -22,7 +22,7 @@
                         <a class="nav-link" href="/">Главная<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/edit">Редактирование<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Редактирование<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-md-0">
