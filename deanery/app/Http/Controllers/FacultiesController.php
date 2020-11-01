@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class FacultiesController extends Controller
 {
-    public function facultiesPage($id) {
-        return view('faculties', ['faculties' => Faculties::findOrFail($id)]);
+    public function facultiesPage() {
+        return view('faculties');
     }
 }

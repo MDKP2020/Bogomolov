@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/Maincontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/Maincontroller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/database/migrations/2020_10_29_005526_create_student_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/database/migrations/2020_10_29_005526_create_student_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="yury-tests" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -215,10 +199,6 @@
       <workItem from="1603929149265" duration="9535000" />
       <workItem from="1604110372142" duration="1257000" />
       <workItem from="1604111865578" duration="5004000" />
-      <workItem from="1604176281816" duration="2665000" />
-      <workItem from="1604187368559" duration="1267000" />
-      <workItem from="1604240769788" duration="754000" />
-      <workItem from="1604244225111" duration="1158000" />
     </task>
     <task id="LOCAL-00001" summary="добавлена стартовая страница. убраны файлы из гитигнора">
       <created>1600936287722</created>
@@ -254,18 +234,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавлена стартовая страница. убраны файлы из гитигнора" />
     <MESSAGE value="добавлены файлы миграции.&#10;добавлены классы на сущности студент, курс, специальность, факультет, группа&#10;добавлен контроллер на обработку всех моделей" />
@@ -289,38 +257,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="736" y="432" width="447" height="265" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1604123299929" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604247015639">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604247015639" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604247015639">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604247015639" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604247015639">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604247015639" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604247015639">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604247015639" />
     <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1604023765673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604023765673" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604240849730">
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600893161378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604240849730" />
-    <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1604176588274">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600893161378" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604111512228">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1604176588274" />
-    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1604176138200">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604176138200" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604111512228" />
   </component>
 </project>
