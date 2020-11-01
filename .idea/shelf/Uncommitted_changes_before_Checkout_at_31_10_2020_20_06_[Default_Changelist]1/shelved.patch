@@ -1,0 +1,75 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5d823cfa-2ddf-4026-8428-070720ed1150\" name=\"Default Changelist\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\" synchronizationState=\"SYNCHRONIZE\">\r\n    <pharConfigPath>$PROJECT_DIR$/deanery/composer.json</pharConfigPath>\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"composer.json\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\">\r\n    <include_path>\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/doctrine/lexer\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/theseer/tokenizer\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/doctrine/inflector\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/vlucas/phpdotenv\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/opis/closure\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/nesbot/carbon\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/console\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/css-selector\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/deprecation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/ralouphie/getallheaders\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/error-handler\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/event-dispatcher-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpunit/php-code-coverage\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/finder\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpunit/php-file-iterator\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/http-foundation\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpunit/php-invoker\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/http-kernel\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/fzaninotto/faker\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpunit/php-text-template\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/mime\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpunit/php-timer\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-ctype\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-iconv\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-intl-grapheme\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-intl-idn\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-intl-normalizer\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-mbstring\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-php70\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-php72\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-php73\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/polyfill-php80\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/dragonmantank/cron-expression\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/process\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/routing\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpoption/phpoption\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/service-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/string\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/translation\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/translation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/symfony/var-dumper\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/webmozart/assert\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/myclabs/deep-copy\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/cli-parser\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/code-unit-reverse-lookup\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/complexity\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/lines-of-code\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/nunomaduro/collision\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/league/commonmark\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/fruitcake/laravel-cors\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/league/flysystem\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/league/mime-type-detection\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/graham-campbell/result-type\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/scrivo/highlight.php\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/global-state\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/paragonie/random_compat\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/diff\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/exporter\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/object-enumerator\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/environment\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/comparator\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/object-reflector\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/code-unit\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/nikic/php-parser\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpdocumentor/reflection-common\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpdocumentor/reflection-docblock\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpdocumentor/type-resolver\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/hamcrest/hamcrest-php\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/asm89/stack-cors\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/swiftmailer/swiftmailer\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/tijsverkoyen/css-to-inline-styles\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpunit/phpunit\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/facade/flare-client-php\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/dnoegel/php-xdg-base-dir\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/facade/ignition\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/facade/ignition-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/egulias/email-validator\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/recursion-context\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/resource-operations\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/type\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/sebastian/version\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/psr/http-client\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/psy/psysh\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/psr/http-message\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/monolog/monolog\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/fideloper/proxy\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/filp/whoops\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/psr/container\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/ramsey/collection\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/psr/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/ramsey/uuid\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phpspec/prophecy\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/psr/log\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/psr/simple-cache\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/doctrine/instantiator\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/laravel/framework\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/laravel/tinker\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/guzzlehttp/guzzle\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/guzzlehttp/promises\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/guzzlehttp/psr7\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phar-io/manifest\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/phar-io/version\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/brick/math\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/mockery/mockery\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/voku/portable-ascii\" />\r\n      <path value=\"$PROJECT_DIR$/deanery/vendor/composer\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1huelQyoRKSoy7ueKAYycmhIzJB\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5d823cfa-2ddf-4026-8428-070720ed1150\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1600865555210</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1600865555210</updated>\r\n      <workItem from=\"1600865556563\" duration=\"735000\" />\r\n      <workItem from=\"1600866381189\" duration=\"318000\" />\r\n      <workItem from=\"1600867300872\" duration=\"9235000\" />\r\n      <workItem from=\"1600876641277\" duration=\"404000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision df964b8f1bd7bc446a8e35c29ee66d17e0adb59d)
++++ .idea/workspace.xml	(date 1604160378682)
+@@ -1,13 +1,15 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="" />
++    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
++  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+     <pharConfigPath>$PROJECT_DIR$/deanery/composer.json</pharConfigPath>
+     <execution />
+   </component>
+@@ -17,6 +19,14 @@
+         <option value="composer.json" />
+       </list>
+     </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="PhpWorkspaceProjectConfiguration">
+     <include_path>
+@@ -152,10 +162,31 @@
+       <workItem from="1600866381189" duration="318000" />
+       <workItem from="1600867300872" duration="9235000" />
+       <workItem from="1600876641277" duration="404000" />
++      <workItem from="1600892948163" duration="459000" />
++      <workItem from="1601144259562" duration="12000" />
++      <workItem from="1604159948034" duration="26000" />
++      <workItem from="1604159985532" duration="329000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="WindowStateProjectService">
++    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604160090662">
++      <screen x="0" y="0" width="1536" height="824" />
++    </state>
++    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604160090662" />
++  </component>
+ </project>
+\ No newline at end of file
