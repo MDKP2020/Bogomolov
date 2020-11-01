@@ -17,7 +17,7 @@ Route::get('/', 'App\Http\Controllers\MainController@homePage');
 
 //Route::get('/courses', 'Maincontroller@coursesPage');
 //
-//Route::get('/faculties', 'Maincontroller@facultiesPage');
+Route::get('/faculties', 'App\Http\Controllers\FacultiesController@facultiesPage');
 //
 //Route::get('/majors', 'Maincontroller@majorsPage');
 //

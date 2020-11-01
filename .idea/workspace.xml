@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deanery/resources/views/faculty.blade.php" afterDir="false" />
+    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="Добавлен файл домашней страницы.">
+      <change beforePath="$PROJECT_DIR$/.idea/deanery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deanery.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/Maincontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultiesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultiesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/faculty.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/routes/web.php" afterDir="false" />
     </list>
@@ -252,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604023750769</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавлен файл домашней страницы.">
+      <created>1604255183243</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604255183243</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +280,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавлена стартовая страница. убраны файлы из гитигнора" />
     <MESSAGE value="добавлены файлы миграции.&#10;добавлены классы на сущности студент, курс, специальность, факультет, группа&#10;добавлен контроллер на обработку всех моделей" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены файлы миграции.&#10;добавлены классы на сущности студент, курс, специальность, факультет, группа&#10;добавлен контроллер на обработку всех моделей" />
+    <MESSAGE value="Добавлен файл домашней страницы." />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен файл домашней страницы." />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604123287017">
@@ -296,10 +305,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="736" y="432" width="447" height="265" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1604123299929" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1604023765673">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="451" y="168" key="Vcs.Push.Dialog.v2" timestamp="1604255189808">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604023765673" />
+    <state x="451" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604255189808" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600893161378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
