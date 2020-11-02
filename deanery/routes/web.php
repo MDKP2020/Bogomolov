@@ -15,10 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\MainController@homePage');
 
-//Route::get('/courses', 'Maincontroller@coursesPage');
-//
 Route::get('/faculties', 'App\Http\Controllers\FacultiesController@facultiesPage');
-//
+
+Route::get('/fevt/majors', 'App\Http\Controllers\MajorsController@fevtPage');
+
+Route::get('/fevt/prin/courses', 'App\Http\Controllers\CoursesController@prinPage');
+
+Route::get('/fevt/prin/4/groups', 'App\Http\Controllers\GroupsController@prin4Page');
+
 //Route::get('/majors', 'Maincontroller@majorsPage');
 //
 //Route::get('/groups', 'Maincontroller@groupsPage');
