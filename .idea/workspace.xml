@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="Сделал страницы для выбора направлений ФЭВТ, выбора курса для ПрИн, выбора группы для 4 курса ПрИн.">
-      <change afterPath="$PROJECT_DIR$/deanery/resources/views/head.blade.php" afterDir="false" />
+    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="Вывел код шапки сайта в отдельный файл, чтобы потом просто использовать во всех остальных.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/resources/views/fevt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/fevt.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/prin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/prin4.blade.php" afterDir="false" />
@@ -225,7 +225,8 @@
       <workItem from="1604110372142" duration="1257000" />
       <workItem from="1604111865578" duration="5004000" />
       <workItem from="1604265797356" duration="4847000" />
-      <workItem from="1604312445294" duration="1304000" />
+      <workItem from="1604312445294" duration="1374000" />
+      <workItem from="1604317928482" duration="3509000" />
     </task>
     <task id="LOCAL-00001" summary="добавлена стартовая страница. убраны файлы из гитигнора">
       <created>1600936287722</created>
@@ -283,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604270460690</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Вывел код шапки сайта в отдельный файл, чтобы потом просто использовать во всех остальных.">
+      <created>1604313786370</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604313786370</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +315,8 @@
     <MESSAGE value="Добавлен файл домашней страницы." />
     <MESSAGE value="Добавил переход с главной страницы на страницу с факультетами." />
     <MESSAGE value="Сделал страницы для выбора направлений ФЭВТ, выбора курса для ПрИн, выбора группы для 4 курса ПрИн." />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал страницы для выбора направлений ФЭВТ, выбора курса для ПрИн, выбора группы для 4 курса ПрИн." />
+    <MESSAGE value="Вывел код шапки сайта в отдельный файл, чтобы потом просто использовать во всех остальных." />
+    <option name="LAST_COMMIT_MESSAGE" value="Вывел код шапки сайта в отдельный файл, чтобы потом просто использовать во всех остальных." />
   </component>
   <component name="WindowStateProjectService">
     <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604123287017">
