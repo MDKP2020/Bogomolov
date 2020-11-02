@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="Добавлен файл домашней страницы.">
-      <change beforePath="$PROJECT_DIR$/.idea/deanery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deanery.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_10_2020_20_06__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_10_2020_20_06__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_10_2020_20_06__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_10_2020_20_06__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_10_2020_23_42__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_10_2020_23_42__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultiesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultiesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/faculty.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,6 +275,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавлена стартовая страница. убраны файлы из гитигнора" />
