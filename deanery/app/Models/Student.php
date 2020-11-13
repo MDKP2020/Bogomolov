@@ -11,6 +11,13 @@ class Student extends Model
 {
     use HasFactory;
 
+    /**
+     * Связанная с моделью таблица.
+     *
+     * @var string
+     */
+    protected $table = 'student';
+
     public function findOrFail($id)
     {
         $student = DB::table('student')->where('id', $id)->get();

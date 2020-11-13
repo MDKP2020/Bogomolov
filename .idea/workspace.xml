@@ -20,13 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="Сделал страницы для выбора направлений ФЭВТ, выбора курса для ПрИн, выбора группы для 4 курса ПрИн.">
-      <change afterPath="$PROJECT_DIR$/deanery/resources/views/head.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/CourseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultyController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/MajorController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/routes/course-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/routes/faculty-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/routes/group-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/routes/major-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/routes/student-api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/fevt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/fevt.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/CoursesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultiesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/GroupsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/MajorsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Models/Courses.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Models/Course.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Models/Faculties.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Models/Major.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Models/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Models/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Models/Groups.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Models/Faculty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Models/Majors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/app/Models/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Models/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/prin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/prin4.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +69,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="prototype" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -167,6 +187,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1huelQyoRKSoy7ueKAYycmhIzJB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -174,7 +197,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deanery/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -185,6 +208,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bogom\PhpstormProjects\Bogomolov\deanery\resources\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danil\PhpstormProjects\Bogomolov\deanery\public\css" />
     </key>
@@ -226,6 +252,8 @@
       <workItem from="1604111865578" duration="5004000" />
       <workItem from="1604265797356" duration="4847000" />
       <workItem from="1604312445294" duration="1304000" />
+      <workItem from="1604861451023" duration="77000" />
+      <workItem from="1605305696622" duration="1371000" />
     </task>
     <task id="LOCAL-00001" summary="добавлена стартовая страница. убраны файлы из гитигнора">
       <created>1600936287722</created>
@@ -323,23 +351,51 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604111552819" />
-    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1604023747242">
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1604317866277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604023747242" />
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604317866277" />
     <state x="736" y="432" width="447" height="265" key="ComposerInitDialogKey" timestamp="1604123299929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="736" y="432" width="447" height="265" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1604123299929" />
+    <state width="500" height="442" key="Diff.GoToChangePopup" timestamp="1604317403560">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="500" height="442" key="Diff.GoToChangePopup/0.0.1536.824@0.0.1536.824" timestamp="1604317403560" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1604317859991">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1604317859991" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1605306928397">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605306928397" />
     <state x="451" y="168" key="Vcs.Push.Dialog.v2" timestamp="1604270520135">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604023765673" />
     <state x="451" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604270520135" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600893161378">
+    <state x="98" y="99" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1604317859991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1600893161378" />
+    <state x="98" y="99" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1604317859991" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604321632244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1604321632244" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1604317859991">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1604317859991" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604316525776">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604316525776" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605305920724">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605305920724" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604111512228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -15,13 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\MainController@homePage');
 
-Route::get('/faculties', 'App\Http\Controllers\FacultiesController@facultiesPage');
+Route::get('/faculties', 'App\Http\Controllers\FacultyController@facultiesPage');
 
-Route::get('/fevt/majors', 'App\Http\Controllers\MajorsController@fevtPage');
+Route::get('/fevt/majors', 'App\Http\Controllers\MajorController@fevtPage');
 
-Route::get('/fevt/prin/courses', 'App\Http\Controllers\CoursesController@prinPage');
+Route::get('/fevt/prin/courses', 'App\Http\Controllers\CourseController@prinPage');
 
-Route::get('/fevt/prin/4/groups', 'App\Http\Controllers\GroupsController@prin4Page');
+Route::get('/fevt/prin/4/groups', 'App\Http\Controllers\GroupController@prin4Page');
 
 //Route::get('/majors', 'Maincontroller@majorsPage');
 //

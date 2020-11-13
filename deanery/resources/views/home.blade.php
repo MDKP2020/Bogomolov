@@ -3,6 +3,7 @@
 @section('title')Главная страница@endsection
 
 @section('main_content')
+
     <div class="container h-100 border-left border-right p-2 d-flex flex-column align-items-center">
         <a class="btn btn-primary w-75" href="/faculties" role="button">Факультеты</a>
         <div class="dropdown mt-2 w-75" id="dd_faculty">

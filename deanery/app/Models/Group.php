@@ -9,6 +9,13 @@ class Group extends Model
 {
     use HasFactory;
 
+    /**
+     * Связанная с моделью таблица.
+     *
+     * @var string
+     */
+    protected $table = 'group';
+
     public static function findOrFail($id)
     {
     }
