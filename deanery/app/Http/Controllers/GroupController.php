@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class GroupController extends Controller
 {
     public function groupPage($id) {
-        return view('Group', ['Group' => Group::findOrFail($id)]);
+        return view('group', ['group' => Group::findOrFail($id)]);
     }
 }

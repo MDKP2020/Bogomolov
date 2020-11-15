@@ -6,7 +6,7 @@
     <div class="container h-100 border-right border-left bg-white shadow">
         <div class="row h-100">
             <div class="col-4 border-right p-0">
-                <div class="col border-bottom mt-3">
+                <div class="col border-bottom pt-3 pb-2">
                     <h5>Разделы</h5>
                 </div>
                 <ul class="list-group list-group-flush m-2">
@@ -15,8 +15,9 @@
                 </ul>
             </div>
             <div class="col p-0">
-                <div class="col border-bottom mt-3">
+                <div class="col border-bottom pt-3 pb-2 d-flex flex-row align-items-center">
                     <h5>Выберите нужный пункт</h5>
+                    <button type="button" class="btn btn-sm btn-outline-secondary ml-auto">Редактировать</button>
                 </div>
                 <div class="row m-3">
                     <div class="col-4">

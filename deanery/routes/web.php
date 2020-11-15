@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GroupController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,8 @@ Route::get('/fevt/majors', 'App\Http\Controllers\MajorsController@fevtPage');
 Route::get('/fevt/prin/courses', 'App\Http\Controllers\CoursesController@prinPage');
 
 Route::get('/fevt/prin/4/groups', 'App\Http\Controllers\GroupsController@prin4Page');
+
+Route::get('/fevt/prin/4/{id}', [GroupController::class, 'groupPage']);
 
 //Route::get('/majors', 'Maincontroller@majorsPage');
 //

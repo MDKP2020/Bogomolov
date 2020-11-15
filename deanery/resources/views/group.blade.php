@@ -13,17 +13,17 @@
                     <li class="list-group-item user-select-none">ФЭиВТ</li>
                     <li class="list-group-item user-select-none">Программная инженерия</li>
                     <li class="list-group-item user-select-none">4 курс</li>
-                    <li class="list-group-item user-select-none font-weight-bold">Выберите группу</li>
+                    <li class="list-group-item user-select-none font-weight-bold">{{$id}}</li>
                 </ul>
             </div>
             <div class="col p-0">
                 <div class="col border-bottom pt-3 pb-2 d-flex flex-row align-items-center">
-                    <h5>Выберите нужный пункт</h5>
+                    <h5>{{$id}}</h5>
                     <button type="button" class="btn btn-sm btn-outline-secondary ml-auto">Редактировать</button>
                 </div>
                 <div class="row m-3">
                     <div class="col-4">
-                        <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="/fevt/prin/4/prin466" role="button">ПрИн-466</a>
+                        <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="#" role="button">ПрИн-466</a>
                     </div>
                     <div class="col-4">
                         <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="#" role="button">ПрИн-467</a>
