@@ -20,13 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="Сделал страницы для выбора направлений ФЭВТ, выбора курса для ПрИн, выбора группы для 4 курса ПрИн.">
-      <change afterPath="$PROJECT_DIR$/deanery/resources/views/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/fevt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/fevt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/prin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/prin4.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_10_2020_20_06__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_10_2020_20_06__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_10_2020_20_06__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_10_2020_20_06__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_10_2020_23_42__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_10_2020_23_42__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_1.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
