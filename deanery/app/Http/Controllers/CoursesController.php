@@ -8,4 +8,7 @@ class CoursesController extends Controller
     {
         return view('prin');
     }
+    public function edit() {
+        return view('prinedit');
+    }
 }

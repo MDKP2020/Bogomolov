@@ -18,8 +18,8 @@
             </div>
             <div class="col p-0 d-flex flex-column">
                 <div class="row m-0 p-2 border-bottom d-flex align-items-center">
-                    <h5 class="m-0">Выберите нужный пункт</h5>
-                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/fevt/majors/edit" role="button">Редактировать</a>
+                    <h5 class="m-0">Режим редактирования</h5>
+                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/fevt/majors" role="button">Сохранить</a>
                 </div>
                 <div class="container p-0 m-0 h-100">
                     <div class="row m-3">
@@ -30,14 +30,20 @@
                             <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="#" role="button">ИВТ</a>
                         </div>
                         <div class="col-4">
-                            <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="/fevt/prin/courses" role="button">ПрИн</a>
+                            <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="#" role="button">ПрИн</a>
                         </div>
                     </div>
                     <div class="row m-3">
                         <div class="col-4">
                             <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="#" role="button">Приборостроение</a>
                         </div>
+                        <div class="col-4">
+                            <a class="btn btn-lg btn-outline-success h-100 w-100" href="#" role="button">Добавить</a>
+                        </div>
                     </div>
+                </div>
+                <div class="col border-top p-2 m-0 d-flex flex-row align-items-center align-bottom">
+                    <a class="btn btn-sm btn-outline-secondary" href="#" role="button">Перевести на следующий курс</a>
                 </div>
             </div>
         </div>

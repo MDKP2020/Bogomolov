@@ -8,4 +8,9 @@ class GroupsController extends Controller
     {
         return view('prin4');
     }
+
+    public function edit()
+    {
+        return view('prin4edit');
+    }
 }
