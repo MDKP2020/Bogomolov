@@ -3,30 +3,37 @@
 @section('title')Группы 4 курса ПрИн@endsection
 
 @section('main_content')
-    <div class="container-fluid h-100 m-0">
-        <div class="container h-100 border-right border-left">
-            <div class="row h-100">
-                <div class="col-4 border-right p-0">
-                    <div class="col border-bottom mt-3">
-                        <h5>Разделы</h5>
-                    </div>
-                    <ul class="list-group list-group-flush m-2">
-                        <li class="list-group-item user-select-none">ФЭиВТ</li>
-                        <li class="list-group-item user-select-none">Программная инженерия</li>
-                        <li class="list-group-item user-select-none">4 курс</li>
-                        <li class="list-group-item user-select-none font-weight-bold">Выберите группу</li>
-                    </ul>
+    <div class="container h-100 border-right border-left bg-white shadow">
+        <div class="row h-100">
+            <div class="col-4 border-right p-0">
+                <div class="row m-0 p-3 border-bottom d-flex align-items-center">
+                    <h5 class="m-0">Разделы</h5>
                 </div>
-                <div class="col p-0">
-                    <div class="col border-bottom mt-3">
-                        <h5>Выберите нужный пункт</h5>
-                    </div>
+                <ul class="list-group list-group-flush m-2">
+                    <li class="list-group-item user-select-none">
+                        <a class="text-dark" href="/faculties">ФЭиВТ</a>
+                    </li>
+                    <li class="list-group-item user-select-none">
+                        <a class="text-dark" href="/fevt/majors">Программная инженерия</a>
+                    </li>
+                    <li class="list-group-item user-select-none">
+                        <a class="text-dark" href="/fevt/prin/courses">4 курс</a>
+                    </li>
+                    <li class="list-group-item user-select-none font-weight-bold">Выберите группу</li>
+                </ul>
+            </div>
+            <div class="col p-0 d-flex flex-column">
+                <div class="row m-0 p-2 border-bottom d-flex align-items-center">
+                    <h5 class="m-0">Выберите нужный пункт</h5>
+                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/fevt/prin/4/edit" role="button">Редактировать</a>
+                </div>
+                <div class="container p-0 m-0 h-100">
                     <div class="row m-3">
                         <div class="col-4">
-                            <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="#" role="button">ПрИн-466</a>
+                            <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="/fevt/prin/4/ПрИн-466" role="button">ПрИн-466</a>
                         </div>
                         <div class="col-4">
-                            <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="#" role="button">ПрИн-467</a>
+                            <a class="btn btn-lg btn-outline-secondary h-100 w-100" href="/fevt/prin/4/ПрИн-467" role="button">ПрИн-467</a>
                         </div>
                     </div>
                 </div>

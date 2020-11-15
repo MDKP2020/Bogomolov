@@ -11,7 +11,6 @@ class Student extends Model
 {
     use HasFactory;
 
-    // TODO: нормально назвать функцию, к примеру - tryToFindStudentById() >_>, может потом и остальные подредактировать
     public function findOrFail($id)
     {
         $student = DB::table('student')->where('id', $id)->get();

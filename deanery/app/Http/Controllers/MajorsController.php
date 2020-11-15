@@ -9,4 +9,7 @@ class MajorsController extends Controller
         return view('fevt');
     }
 
+    public function edit() {
+        return view('fevtedit');
+    }
 }
