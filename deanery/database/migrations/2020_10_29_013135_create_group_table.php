@@ -15,7 +15,14 @@ class CreateGroupTable extends Migration
     {
         Schema::create('group', function (Blueprint $table) {
             $table->id();
+            $table->integer('group_id');
             $table->string('name');
+            $table->integer('number');
+            $table->date('start_date');
+            $table->date('end_date')->nullable();
+            $table->foreign('major_id')->references('major_id')->on('major');
+
+            $table->date('actual_date');
             $table->timestamps();
         });
     }

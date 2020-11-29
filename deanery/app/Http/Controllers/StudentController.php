@@ -34,9 +34,14 @@ class StudentController extends Controller
     {
         $student = new Student;
 
-        $student->name = $request->name; //todo
+        $student->name = $request->
 
         $student->save();
+        return redirect()->route('student.index');
+    }
+
+    public function getAll() {
+        return Student::all();
     }
 
     public function studentDelete($id)
@@ -51,9 +56,7 @@ class StudentController extends Controller
 
     public function excludeStudent($id)
     {
-        $student = new Student;
 
-        $student->changeExcludeStatus($id, true);
     }
 
 

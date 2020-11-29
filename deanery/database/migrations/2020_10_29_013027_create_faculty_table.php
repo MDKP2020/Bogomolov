@@ -15,7 +15,12 @@ class CreateFacultyTable extends Migration
     {
         Schema::create('faculty', function (Blueprint $table) {
             $table->id();
+            $table->integer('faculty_id');
             $table->string('name');
+            $table->date('start_date');
+            $table->date('end_date')->nullable();
+
+            $table->date('actual_date');
             $table->timestamps();
         });
     }
