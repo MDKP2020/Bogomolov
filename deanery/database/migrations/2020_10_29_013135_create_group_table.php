@@ -20,6 +20,8 @@ class CreateGroupTable extends Migration
             $table->integer('number');
             $table->date('start_date');
             $table->date('end_date')->nullable();
+
+            $table->integer('major_id');
             $table->foreign('major_id')->references('major_id')->on('major');
 
             $table->date('actual_date');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faculty;
 use App\Models\Major;
 use App\Models\Student;
 use http\Client\Response;
@@ -24,11 +25,11 @@ class MajorController extends Controller
      *
      * @return Response|Factory
      */
-    public function index()
+    public function indexPage($id)
     {
-        $majors = Major::all();
+        $majors = Major::where("faculty_id", "=", $id)->get();
 
-        return view('major.index', ['majors' => $majors]);
+        return view('majors', compact('majors'));
     }
 
     public function majorByDate($date)

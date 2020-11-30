@@ -19,4 +19,14 @@ class Major extends Model
     public static function findOrFail($id)
     {
     }
+
+    public static function getByForeignKey($id)
+    {
+
+    }
+
+    public function getTable()
+    {
+        return $this->table;
+    }
 }

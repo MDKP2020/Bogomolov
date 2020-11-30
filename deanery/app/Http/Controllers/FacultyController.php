@@ -18,10 +18,16 @@ class FacultyController extends Controller
      *
      * @return Response|Factory
      */
-    public function index()
+    public function indexPage()
     {
-        $faculties = Faculty::all();
+        $faculties = $this->getAll();
 
-        return view('faculty.index', ['faculties' => $faculties]);
+        return view('faculties', compact('faculties'));
     }
+
+    public function getAll() {
+        return Faculty::all();
+    }
+
+
 }

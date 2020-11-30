@@ -21,6 +21,8 @@ class CreateStudentTable extends Migration
             $table->string('patronymic')->nullable();
             $table->date('start_date');
             $table->date('end_date')->nullable();
+
+            $table->integer('group_id');
             $table->foreign('group_id')->references('group_id')->on('group');
 
             $table->date('actual_date');

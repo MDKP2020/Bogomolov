@@ -19,6 +19,8 @@ class CreateMajorTable extends Migration
             $table->string('name');
             $table->date('start_date');
             $table->date('end_date')->nullable();
+
+            $table->integer('faculty_id');
             $table->foreign('faculty_id')->references('faculty_id')->on('faculty');
 
             $table->date('actual_date');

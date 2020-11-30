@@ -4,6 +4,7 @@ use App\Http\Controllers\FacultyController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FacultyController::class, 'getAll']);
+Route::get('/faculties', [FacultyController::class, 'indexPage'])->name('faculties.index');
 
 Route::get('/{id}', [FacultyController::class, 'findById']);
 
