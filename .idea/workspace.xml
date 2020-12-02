@@ -19,19 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="Добавил страницу группы.">
-      <change afterPath="$PROJECT_DIR$/deanery/resources/views/majors.blade.php" afterDir="false" />
+    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/MajorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/MajorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Models/Major.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Models/Major.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/database/migrations/2020_10_29_005526_create_student_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/database/migrations/2020_10_29_005526_create_student_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/database/migrations/2020_10_29_013055_create_major_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/database/migrations/2020_10_29_013055_create_major_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/database/migrations/2020_10_29_013135_create_group_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/database/migrations/2020_10_29_013135_create_group_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/routes/faculty-api.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/routes/faculty-api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +227,7 @@
       <workItem from="1606600335654" duration="1027000" />
       <workItem from="1606601875460" duration="2339000" />
       <workItem from="1606668852009" duration="4206000" />
-      <workItem from="1606685811083" duration="11550000" />
+      <workItem from="1606685811083" duration="11879000" />
     </task>
     <task id="LOCAL-00001" summary="добавлена стартовая страница. убраны файлы из гитигнора">
       <created>1600936287722</created>
@@ -324,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606671568420</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="обновлена бд, хтмл пофикшен.">
+      <created>1606742194436</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606742194436</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +348,8 @@
     <MESSAGE value="Добавил тень для основного контейнера. Пофиксил скролл. Заменил кнопку Главная на Архив." />
     <MESSAGE value="Добавил страницу группы." />
     <MESSAGE value="переделана бд.&#10;добавлена функция getall в контроллер студентов" />
-    <option name="LAST_COMMIT_MESSAGE" value="переделана бд.&#10;добавлена функция getall в контроллер студентов" />
+    <MESSAGE value="обновлена бд, хтмл пофикшен." />
+    <option name="LAST_COMMIT_MESSAGE" value="обновлена бд, хтмл пофикшен." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606741702828">
@@ -372,10 +369,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604111552819" />
-    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1606671565899">
+    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1606742192318">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606671565899" />
+    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606742192318" />
     <state x="736" y="432" width="447" height="265" key="ComposerInitDialogKey" timestamp="1604123299929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -401,10 +398,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606737520158" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1606671577984">
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1606742214059">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606671577984" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606742214059" />
     <state x="451" y="168" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1605449902043" />
     <state x="499" y="217" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1606736827677">
       <screen x="0" y="0" width="1536" height="824" />
