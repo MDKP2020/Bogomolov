@@ -11,7 +11,10 @@
                 </div>
                 <ul class="list-group list-group-flush m-2">
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/faculties">ФЭиВТ</a>
+                        <a class="text-dark" href="/courses">4 курс</a>
+                    </li>
+                    <li class="list-group-item user-select-none">
+                        <a class="text-dark" href="/4/faculties">ФЭиВТ</a>
                     </li>
                     <li class="list-group-item user-select-none font-weight-bold">Выберите направление</li>
                 </ul>
@@ -19,13 +22,13 @@
             <div class="col p-0 d-flex flex-column">
                 <div class="row m-0 p-2 border-bottom d-flex align-items-center">
                     <h5 class="m-0">Выберите нужный пункт</h5>
-                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/fevt/majors/edit" role="button">Редактировать</a>
+                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="#" role="button">Редактировать</a>
                 </div>
                 <div class="container p-0 m-0 h-100">
                     <div class="row m-3">
                         @foreach($majors as $major)
                             <div class="col-4 mt-3">
-                                <a class="btn btn-lg btn-outline-secondary w-100" href="#" role="button">{{$major->name}}</a>
+                                <a class="btn btn-lg btn-outline-secondary w-100" href="/4/{{$major->faculty_id}}/{{$major->id}}/groups" role="button">{{$major->name}}</a>
                             </div>
                         @endforeach
                     </div>

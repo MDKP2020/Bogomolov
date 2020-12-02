@@ -27,10 +27,10 @@ class GroupController extends Controller
      *
      * @return Response|Factory
      */
-    public function index()
+    public function indexPage($id)
     {
-        $groups = Group::all();
+        $groups = Group::where('major_id', '=', $id)->get();
 
-        return view('group.index', ['groups' => $groups]);
+        return view('groups', compact('groups'));
     }
 }

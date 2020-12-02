@@ -27,7 +27,7 @@ class MajorController extends Controller
      */
     public function indexPage($id)
     {
-        $majors = Major::where("faculty_id", "=", $id)->get();
+        $majors = Major::where('faculty_id', '=', $id)->get();
 
         return view('majors', compact('majors'));
     }

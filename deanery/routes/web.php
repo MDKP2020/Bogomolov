@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\MajorController;
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GroupController;
 
@@ -19,11 +21,18 @@ use App\Http\Controllers\GroupController;
 Route::get('/', 'App\Http\Controllers\MainController@homePage');
 
 //Route::get('/faculties', 'App\Http\Controllers\FacultiesController@facultiesPage');
-Route::get('/faculties', [FacultyController::class, 'indexPage'])->name('faculties.index');
 
-Route::get('/faculties/edit', 'App\Http\Controllers\FacultiesController@edit');
+Route::get('/courses', [CourseController::class, 'indexPage'])->name('courses.index');
 
-Route::get('/{id}/majors', [MajorController::class, 'indexPage'])->name('majors.index');
+Route::get('/4/faculties', [FacultyController::class, 'indexPage'])->name('faculties.index');
+
+Route::get('/4/{id}/majors', [MajorController::class, 'indexPage'])->name('majors.index');
+
+Route::get('/4/5/{id}/groups', [GroupController::class, 'indexPage'])->name('groups.index');
+
+Route::get('/4/5/2/{id}', [StudentController::class, 'indexPage'])->name('students.index');
+
+Route::get('/4/5/2/{id}/edit', [StudentController::class, 'editPage'])->name('students.index');
 
 Route::get('/fevt/majors/edit', 'App\Http\Controllers\MajorsController@edit');
 

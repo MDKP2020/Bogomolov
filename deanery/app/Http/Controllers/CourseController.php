@@ -24,10 +24,10 @@ class CourseController extends Controller
      *
      * @return Response|Factory
      */
-    public function index()
+    public function indexPage()
     {
         $courses = course::all();
 
-        return view('course.index', ['courses' => $courses]);
+        return view('courses', compact('courses'));
     }
 }

@@ -1,6 +1,6 @@
 @extends('head')
 
-@section('title'){{$id}}@endsection
+@section('title')ПрИн-466 @endsection
 
 @section('main_content')
     <div class="container h-100 border-right border-left bg-white shadow">
@@ -11,106 +11,87 @@
                 </div>
                 <ul class="list-group list-group-flush m-2">
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/faculties">ФЭиВТ</a>
+                        <a class="text-dark" href="/courses">4 курс</a>
                     </li>
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/fevt/majors">Программная инженерия</a>
+                        <a class="text-dark" href="/4/faculties">ФЭиВТ</a>
                     </li>
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/fevt/prin/courses">4 курс</a>
+                        <a class="text-dark" href="/4/5/majors">Программная инженерия</a>
                     </li>
-                    <li class="list-group-item user-select-none font-weight-bold">
-                        <a class="text-dark" href="/fevt/prin/4/groups">{{$id}}</a>
+                    <li class="list-group-item user-select-none">
+                        <a class="text-dark" href="/4/5/2/groups">ПрИн-466</a>
                     </li>
                 </ul>
             </div>
             <div class="col p-0 d-flex flex-column">
                 <div class="row m-0 p-2 border-bottom d-flex align-items-center">
-                    <h5 class="m-0">{{$id}} - Режим редактирования</h5>
-                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/fevt/prin/4/{{$id}}" role="button">Сохранить</a>
+                    <h5 class="m-0">ПрИн-466</h5>
+                    <h5 class="m-0 ml-2 font-weight-light">редактированиe</h5>
+                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/4/5/2/0/" role="button">Сохранить</a>
                 </div>
                 <div class="row m-0 h-100">
                     <table class="table">
                         <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">№</th>
                             <th scope="col">Имя</th>
                             <th scope="col">Фамилия</th>
+                            <th scope="col">Отчество</th>
                             <th scope="col">№ Зачетной книжки</th>
+                            <th scope="col"></th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Артемов</td>
-                            <td>Данила</td>
-                            <td>17106092</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Баклан</td>
-                            <td>Варвара</td>
-                            <td>17562153</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Богомолов</td>
-                            <td>Иван</td>
-                            <td>17435645</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Киселев</td>
-                            <td>Юрий</td>
-                            <td>17356482</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Крымова</td>
-                            <td>Мария</td>
-                            <td>17246362</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Меркулов</td>
-                            <td>Владислав</td>
-                            <td>17315468</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>Носкин</td>
-                            <td>Виктор</td>
-                            <td>17145326</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>Сасов</td>
-                            <td>Дмитрий</td>
-                            <td>17065432</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>Степанов</td>
-                            <td>Станислав</td>
-                            <td>17654862</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10</th>
-                            <td>Турицына</td>
-                            <td>Алина</td>
-                            <td>17145623</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">11</th>
-                            <td>Чечеткин</td>
-                            <td>Павел</td>
-                            <td>17234546</td>
-                        </tr>
+                        @foreach($students as $student)
+                            <tr>
+                                <th scope="row">{{$student->id+1}}</th>
+                                <td>{{$student->surname}}</td>
+                                <td>{{$student->name}}</td>
+                                <td>{{$student->patronymic}}</td>
+                                <td>{{$student->student_id}}</td>
+                                <td><button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#exampleModalCenter" id="{{$student->id}}">Ред.</button></td>
+                            <tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>
                 <div class="col border-top p-2 m-0 d-flex flex-row align-items-center align-bottom">
                     <a class="btn btn-sm btn-outline-secondary" href="#" role="button">Перевести на следующий курс</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Редактирование студента</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="student_surname">Фамилия</label>
+                            <input type="text" class="form-control" id="student_surname" value="Артемов">
+                        </div>
+                        <div class="form-group">
+                            <label for="student_name">Имя</label>
+                            <input type="text" class="form-control" id="student_name" value="Данила">
+                        </div>
+                        <div class="form-group">
+                            <label for="student_patronymic">Отчество</label>
+                            <input type="text" class="form-control" id="student_patronymic" value="Сергеевич">
+                        </div>
+{{--                        <input type="text" class="form-control" id="student_surname" placeholder="{{$student->surname}}">--}}
+{{--                        <input type="text" class="form-control" id="student_name" placeholder="{{$student->name}}">--}}
+{{--                        <input type="text" class="form-control" id="student_patronymic" placeholder="{{$student->patronymic}}">--}}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -23,11 +23,18 @@ class StudentController extends Controller
      *
      * @return Response|Factory
      */
-    public function index()
+    public function indexPage($id)
     {
-        $students = Student::all();
+        $students = Student::where('group_id', '=', $id)->get();
 
-        return view('student.index', ['students' => $students]);
+        return view('group', compact('students'));
+    }
+
+    public function editPage($id)
+    {
+        $students = Student::where('group_id', '=', $id)->get();
+
+        return view('groupedit', compact('students'));
     }
 
     public function studentCreate(Request $request)
