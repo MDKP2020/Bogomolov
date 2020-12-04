@@ -14,11 +14,6 @@ class CourseController extends Controller
         return view('course', ['course' => Course::findOrFail($id)]);
     }
 
-    public function prinPage()
-    {
-        return view('prin');
-    }
-
     /**
      * Показать список всех курсов.
      *

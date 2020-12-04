@@ -15,11 +15,6 @@ class MajorController extends Controller
         return view('major', ['major' => Major::findOrFail($id)]);
     }
 
-    public function fevtPage()
-    {
-        return view('fevt');
-    }
-
     /**
      * Показать список всех специальностей.
      *
@@ -27,7 +22,7 @@ class MajorController extends Controller
      */
     public function indexPage($id)
     {
-        $majors = Major::where('faculty_id', '=', $id)->get();
+        $majors = Major::where('faculty_id',  $id)->get();
 
         return view('majors', compact('majors'));
     }

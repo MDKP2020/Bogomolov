@@ -17,9 +17,11 @@ class CreateGroupTable extends Migration
             $table->id();
             $table->integer('group_id');
             $table->string('name');
-            $table->integer('number');
             $table->date('start_date');
             $table->date('end_date')->nullable();
+
+            $table->integer('course_id');
+            $table->foreign('course_id')->references('course_id')->on('course');
 
             $table->integer('major_id');
             $table->foreign('major_id')->references('major_id')->on('major');

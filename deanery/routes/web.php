@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\DevTest;
 use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\MajorController;
 use App\Http\Controllers\StudentController;
@@ -17,6 +18,7 @@ use App\Http\Controllers\GroupController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', 'App\Http\Controllers\MainController@homePage');
 

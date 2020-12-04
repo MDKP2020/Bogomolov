@@ -17,10 +17,6 @@ class GroupController extends Controller
         return view('groupedit', compact('id'));
     }
 
-    public function prin4Page()
-    {
-        return view('prin4');
-    }
 
     /**
      * Показать список всех групп.
