@@ -18,15 +18,12 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom rounded">
             <div class="container">
                 <a class="navbar-brand font-weight-bold" href="/">Деканат</a>
+                <input type="date" id="calendar" name="calendar">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarsExample09">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Архив<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
+                    <ul class="navbar-nav mr-auto"></ul>
                     <form class="form-inline my-2 my-md-0">
                         <input class="form-control" type="text" placeholder="Введите запрос" aria-label="Search">
                     </form>

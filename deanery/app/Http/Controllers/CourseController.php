@@ -25,4 +25,16 @@ class CourseController extends Controller
 
         return view('courses', compact('courses'));
     }
+
+    /**
+     * Создать новый курс
+     *
+     */
+    public function createNewCourse(Course $request)
+    {
+        $course = $request['course'];
+
+        $new_student = Course::findOrFail($course); //todo
+
+    }
 }
