@@ -34,6 +34,7 @@ Route::get('/{faculty}/{major}/{group}', [StudentController::class, 'indexPage']
 
 Route::get('/{faculty}/{major}/{group}/edit', [StudentController::class, 'editPage'])->name('students.index');
 
+//todo вывод по дате
 //Route::get('/fevt/prin/4/{id}', [GroupController::class, 'groupPage']);
 //
 //Route::get('/fevt/prin/4/{id}/edit', [GroupController::class, 'edit']);

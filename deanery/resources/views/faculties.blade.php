@@ -10,7 +10,7 @@
                     <h5 class="m-0">Разделы</h5>
                 </div>
                 <ul class="list-group list-group-flush m-2">
-                    <li class="list-group-item user-select-none font-weight-bold">Выберите факультет</li>
+                    <li class="list-group-item user-select-none font-weight-bold">Факультеты</li>
                 </ul>
             </div>
             <div class="col p-0 d-flex flex-column">

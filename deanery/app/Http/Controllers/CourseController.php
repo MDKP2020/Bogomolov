@@ -30,11 +30,10 @@ class CourseController extends Controller
      * Создать новый курс
      *
      */
-    public function createNewCourse(Course $request)
+    public function createNewCourse(Course $request) //todo
     {
         $course = $request['course'];
 
-        $new_student = Course::findOrFail($course); //todo
-
+        $new_student = Course::findOrFail($course);
     }
 }

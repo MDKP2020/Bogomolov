@@ -13,7 +13,7 @@
                     <li class="list-group-item user-select-none">
                         <a class="text-dark" href="/faculties">{{$faculty_tab->name}}</a>
                     </li>
-                    <li class="list-group-item user-select-none font-weight-bold">Выберите направление</li>
+                    <li class="list-group-item user-select-none font-weight-bold">Направления</li>
                 </ul>
             </div>
             <div class="col p-0 d-flex flex-column">

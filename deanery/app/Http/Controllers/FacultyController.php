@@ -18,16 +18,30 @@ class FacultyController extends Controller
      *
      * @return Response|Factory
      */
-    public function indexPage()
+    public function indexPage()//todo добавить сортировку по времени
     {
-        $faculties = $this->getAll();
+        $faculties = Faculty::all();
 
         return view('faculties', compact('faculties'));
     }
 
-    public function getAll() {
-        return Faculty::all();
+    public function courseByDate($date) { //todo переместить в inddexPage
+        $faculties = Faculty::where([
+            ['start_date','<=',$date],
+            ['end_date','>=',$date]
+        ])->get();
+
+        return view('faculties', compact('faculties'));
     }
+
+    public function createFaculty() //todo
+    {}
+
+    public function updateFaculty($facultyId) //todo
+    {}
+
+    public function closeFaculty($faultyId) //todo
+    {}
 
 
 }

@@ -26,7 +26,7 @@ class StudentController extends Controller
      *
      * @return Response|Factory
      */
-    public function indexPage($faculty, $major, $group)
+    public function indexPage($faculty, $major, $group) //todo добавить сортировку по времени
     {
         $students = Student::where('group_id', $group)->get();
         $faculty_tab = Faculty::where('faculty_id', $faculty)->first();
@@ -46,7 +46,16 @@ class StudentController extends Controller
         return view('groupedit', compact('faculty_tab', 'major_tab', 'group_tab', 'students'));
     }
 
-    public function studentCreate(Request $request)
+    public function studentByDate($date) { //todo переместить в indexPage
+        $students = Student::where([
+            ['start_date','<=',$date],
+            ['end_date','>=',$date]
+        ])->get();
+
+        return view('students', compact('students'));
+    }
+
+    public function studentCreate(Request $request) //todo
     {
         $student = new Student;
 
@@ -56,15 +65,6 @@ class StudentController extends Controller
         return redirect()->route('student.index');
     }
 
-    public function getAll() {
-        return Student::all();
-    }
-
-    public function studentDelete($id)
-    {
-
-    }
-
     public function studentUpdate()
     {
 
@@ -72,7 +72,7 @@ class StudentController extends Controller
 
     public function excludeStudent($id)
     {
-
+        //todo добавить дату в end_date с помощью этой функции
     }
 
 

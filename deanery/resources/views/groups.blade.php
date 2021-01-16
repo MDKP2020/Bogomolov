@@ -16,7 +16,7 @@
                     <li class="list-group-item user-select-none">
                         <a class="text-dark" href="/{{$faculty_tab->faculty_id}}/majors">{{$major_tab->name}}</a>
                     </li>
-                    <li class="list-group-item user-select-none font-weight-bold">Выберите группу</li>
+                    <li class="list-group-item user-select-none font-weight-bold">Группы</li>
                 </ul>
             </div>
             <div class="col p-0 d-flex flex-column">
@@ -28,13 +28,13 @@
                     <div class="m-2">Курс:</div>
                     <div class="dropdown">
                         <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            @if($_SERVER['REQUEST_URI'] == "/{$faculty_tab->faculty_id}/{$major_tab->major_id}/groups/0")
+                            @if($_SERVER['REQUEST_URI'] == "/{$faculty_tab->faculty_id}/{$major_tab->major_id}/groups/1")
                                 1 курс
-                            @elseif($_SERVER['REQUEST_URI'] == "/{$faculty_tab->faculty_id}/{$major_tab->major_id}/groups/1")
-                                2 курс
                             @elseif($_SERVER['REQUEST_URI'] == "/{$faculty_tab->faculty_id}/{$major_tab->major_id}/groups/2")
-                                3 курс
+                                2 курс
                             @elseif($_SERVER['REQUEST_URI'] == "/{$faculty_tab->faculty_id}/{$major_tab->major_id}/groups/3")
+                                3 курс
+                            @elseif($_SERVER['REQUEST_URI'] == "/{$faculty_tab->faculty_id}/{$major_tab->major_id}/groups/4")
                                 4 курс
                             @else
                                 Все курсы
@@ -42,10 +42,10 @@
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups">Все курсы</a>
-                            <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups/0">1 курс</a>
-                            <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups/1">2 курс</a>
-                            <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups/2">3 курс</a>
-                            <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups/3">4 курс</a>
+                            <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups/1">1 курс</a>
+                            <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups/2">2 курс</a>
+                            <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups/3">3 курс</a>
+                            <a class="dropdown-item" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups/4">4 курс</a>
                         </div>
                     </div>
                 </div>
