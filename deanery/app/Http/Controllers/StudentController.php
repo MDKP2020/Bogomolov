@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faculty;
+use App\Models\Group;
+use App\Models\Major;
 use App\Models\Student;
 use http\Client\Response;
 use Illuminate\Http\Request;
@@ -23,18 +26,24 @@ class StudentController extends Controller
      *
      * @return Response|Factory
      */
-    public function indexPage($id)
+    public function indexPage($faculty, $major, $group)
     {
-        $students = Student::where('group_id', '=', $id)->get();
+        $students = Student::where('group_id', $group)->get();
+        $faculty_tab = Faculty::where('faculty_id', $faculty)->first();
+        $major_tab = Major::where('major_id', $major)->first();
+        $group_tab = Group::where('group_id', $group)->first();
 
-        return view('group', compact('students'));
+        return view('group', compact('faculty_tab', 'major_tab', 'group_tab', 'students'));
     }
 
-    public function editPage($id)
+    public function editPage($faculty, $major, $group)
     {
-        $students = Student::where('group_id', '=', $id)->get();
+        $students = Student::where('group_id', $group)->get();
+        $faculty_tab = Faculty::where('faculty_id', $faculty)->first();
+        $major_tab = Major::where('major_id', $major)->first();
+        $group_tab = Group::where('group_id', $group)->first();
 
-        return view('groupedit', compact('students'));
+        return view('groupedit', compact('faculty_tab', 'major_tab', 'group_tab', 'students'));
     }
 
     public function studentCreate(Request $request)

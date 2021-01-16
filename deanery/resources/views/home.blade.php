@@ -4,7 +4,7 @@
 
 @section('main_content')
     <div class="container h-100 border-left border-right p-2 d-flex flex-column align-items-center bg-white shadow">
-        <a class="btn btn-primary w-75" href="/courses" role="button">Курсы</a>
+        <a class="btn btn-primary w-75" href="/faculties" role="button">Факультеты</a>
         <div class="dropdown mt-2 w-75" id="dd_faculty">
             <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dd_faculty_btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Факультеты

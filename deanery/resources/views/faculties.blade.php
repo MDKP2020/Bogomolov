@@ -10,9 +10,6 @@
                     <h5 class="m-0">Разделы</h5>
                 </div>
                 <ul class="list-group list-group-flush m-2">
-                    <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/courses">4 курс</a>
-                    </li>
                     <li class="list-group-item user-select-none font-weight-bold">Выберите факультет</li>
                 </ul>
             </div>
@@ -25,7 +22,7 @@
                     <div class="row m-3">
                         @foreach($faculties as $faculty)
                             <div class="col-4 mt-3">
-                                <a class="btn btn-lg btn-outline-secondary w-100" href="/4/{{$faculty->id}}/majors" role="button">{{$faculty->name}}</a>
+                                <a class="btn btn-lg btn-outline-secondary w-100" href="/{{$faculty->faculty_id}}/majors" role="button">{{$faculty->name}}</a>
                             </div>
                         @endforeach
                     </div>

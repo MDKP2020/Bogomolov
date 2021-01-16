@@ -1,6 +1,6 @@
 @extends('head')
 
-@section('title')Направления@endsection
+@section('title')Направления {{$faculty_tab->name}}@endsection
 
 @section('main_content')
     <div class="container h-100 border-right border-left bg-white shadow">
@@ -11,10 +11,7 @@
                 </div>
                 <ul class="list-group list-group-flush m-2">
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/courses">4 курс</a>
-                    </li>
-                    <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/4/faculties">ФЭиВТ</a>
+                        <a class="text-dark" href="/faculties">{{$faculty_tab->name}}</a>
                     </li>
                     <li class="list-group-item user-select-none font-weight-bold">Выберите направление</li>
                 </ul>
@@ -28,7 +25,7 @@
                     <div class="row m-3">
                         @foreach($majors as $major)
                             <div class="col-4 mt-3">
-                                <a class="btn btn-lg btn-outline-secondary w-100" href="/4/{{$major->faculty_id}}/{{$major->id}}/groups" role="button">{{$major->name}}</a>
+                                <a class="btn btn-lg btn-outline-secondary w-100" href="/{{$faculty_tab->id}}/{{$major->id}}/groups" role="button">{{$major->name}}</a>
                             </div>
                         @endforeach
                     </div>

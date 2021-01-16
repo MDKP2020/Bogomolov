@@ -19,6 +19,16 @@
             <div class="container">
                 <a class="navbar-brand font-weight-bold" href="/">Деканат</a>
                 <input type="date" id="calendar" name="calendar">
+                <script>
+                    calendar = document.getElementById('calendar');
+
+                    timeEllapsed = Date.now();
+                    currentDate = new Date(timeEllapsed);
+                    curDate = currentDate.getFullYear() + '-' + currentDate.getMonth() + 1 + '-' + currentDate.getDate();
+
+                    calendar.valueAsDate = currentDate;
+                    calendar.max = curDate;
+                </script>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

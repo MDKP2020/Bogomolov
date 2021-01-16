@@ -20,11 +20,12 @@ class MajorController extends Controller
      *
      * @return Response|Factory
      */
-    public function indexPage($id)
+    public function indexPage($faculty)
     {
-        $majors = Major::where('faculty_id',  $id)->get();
+        $majors = Major::where('faculty_id',  $faculty)->get();
+        $faculty_tab = Faculty::where('faculty_id', $faculty)->first();
 
-        return view('majors', compact('majors'));
+        return view('majors', compact('faculty_tab', 'majors'));
     }
 
     public function majorByDate($date)

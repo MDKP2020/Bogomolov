@@ -1,6 +1,6 @@
 @extends('head')
 
-@section('title')ПрИн-466 @endsection
+@section('title'){{$group_tab->name}} - редактирование@endsection
 
 @section('main_content')
     <div class="container h-100 border-right border-left bg-white shadow">
@@ -11,24 +11,21 @@
                 </div>
                 <ul class="list-group list-group-flush m-2">
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/courses">4 курс</a>
+                        <a class="text-dark" href="/faculties">{{$faculty_tab->name}}</a>
                     </li>
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/4/faculties">ФЭиВТ</a>
+                        <a class="text-dark" href="/{{$faculty_tab->faculty_id}}/majors">{{$major_tab->name}}</a>
                     </li>
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/4/5/majors">Программная инженерия</a>
-                    </li>
-                    <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/4/5/2/groups">ПрИн-466</a>
+                        <a class="text-dark" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups">{{$group_tab->name}}</a>
                     </li>
                 </ul>
             </div>
             <div class="col p-0 d-flex flex-column">
                 <div class="row m-0 p-2 border-bottom d-flex align-items-center">
-                    <h5 class="m-0">ПрИн-466</h5>
+                    <h5 class="m-0">{{$group_tab->name}}</h5>
                     <h5 class="m-0 ml-2 font-weight-light">редактированиe</h5>
-                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/4/5/2/0/" role="button">Сохранить</a>
+                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/{{$group_tab->group_id}}" role="button">Сохранить</a>
                 </div>
                 <div class="row m-0 h-100">
                     <table class="table">
@@ -50,7 +47,7 @@
                                 <td>{{$student->name}}</td>
                                 <td>{{$student->patronymic}}</td>
                                 <td>{{$student->student_id}}</td>
-                                <td><button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#exampleModalCenter" id="{{$student->id}}">Ред.</button></td>
+                                <td><button type="button" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#exampleModalCenter" datasrc="{{$student->id}}">Ред.</button></td>
                             <tr>
                         @endforeach
                         </tbody>
@@ -74,15 +71,15 @@
                     <div class="modal-body">
                         <div class="form-group">
                             <label for="student_surname">Фамилия</label>
-                            <input type="text" class="form-control" id="student_surname" value="Артемов">
+                            <input type="text" class="form-control" id="student_surname" value="{{$student->surname}}">
                         </div>
                         <div class="form-group">
                             <label for="student_name">Имя</label>
-                            <input type="text" class="form-control" id="student_name" value="Данила">
+                            <input type="text" class="form-control" id="student_name" value="{{$student->name}}">
                         </div>
                         <div class="form-group">
                             <label for="student_patronymic">Отчество</label>
-                            <input type="text" class="form-control" id="student_patronymic" value="Сергеевич">
+                            <input type="text" class="form-control" id="student_patronymic" value="{{$student->patronymic}}">
                         </div>
 {{--                        <input type="text" class="form-control" id="student_surname" placeholder="{{$student->surname}}">--}}
 {{--                        <input type="text" class="form-control" id="student_name" placeholder="{{$student->name}}">--}}

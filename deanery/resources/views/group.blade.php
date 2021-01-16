@@ -1,6 +1,6 @@
 @extends('head')
 
-@section('title')ПрИн-466 @endsection
+@section('title'){{$group_tab->name}}@endsection
 
 @section('main_content')
     <div class="container h-100 border-right border-left bg-white shadow">
@@ -11,23 +11,20 @@
                 </div>
                 <ul class="list-group list-group-flush m-2">
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/courses">4 курс</a>
+                        <a class="text-dark" href="/faculties">{{$faculty_tab->name}}</a>
                     </li>
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/4/faculties">ФЭиВТ</a>
+                        <a class="text-dark" href="/{{$faculty_tab->faculty_id}}/majors">{{$major_tab->name}}</a>
                     </li>
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/4/5/majors">Программная инженерия</a>
-                    </li>
-                    <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/4/5/2/groups">ПрИн-466</a>
+                        <a class="text-dark" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/groups">{{$group_tab->name}}</a>
                     </li>
                 </ul>
             </div>
             <div class="col p-0 d-flex flex-column">
                 <div class="row m-0 p-2 border-bottom d-flex align-items-center">
-                    <h5 class="m-0">ПрИн-466</h5>
-                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/4/5/2/0/edit" role="button">Редактировать</a>
+                    <h5 class="m-0">{{$group_tab->name}}</h5>
+                    <a class="btn btn-sm btn-outline-secondary ml-auto" href="/{{$faculty_tab->faculty_id}}/{{$major_tab->major_id}}/{{$group_tab->group_id}}/edit" role="button">Редактировать</a>
                 </div>
                 <div class="row m-0">
                     <table class="table">
