@@ -33,7 +33,7 @@ class StudentController extends Controller
         $major_tab = Major::where('major_id', $major)->first();
         $group_tab = Group::where('group_id', $group)->first();
 
-        return view('group', compact('faculty_tab', 'major_tab', 'group_tab', 'students'));
+        return view('student', compact('faculty_tab', 'major_tab', 'group_tab', 'students'));
     }
 
     public function editPage($faculty, $major, $group)
@@ -55,24 +55,35 @@ class StudentController extends Controller
         return view('students', compact('students'));
     }
 
-    public function studentCreate(Request $request) //todo
+    public function studentCreate($student_id, $name, $surname, $patronymic, $start_date, $groupName)
     {
         $student = new Student;
 
-        $student->name = $request->
-
-        $student->save();
+        $group = Group::where('name', $groupName)->get(['group_id']);
+        //todo добавить проверку на повтор данных
+        $student->save([
+            ['$student_id'=>$student_id],
+            ['$name'=>$name],
+            ['$surname'=>$surname],
+            ['$patronymic'=>$patronymic],
+            ['$start_date'=>$start_date],
+            ['group_id'=>$group],
+        ]);
         return redirect()->route('student.index');
     }
 
-    public function studentUpdate()
+    public function studentUpdate($name, $surname, $patronymic, $student_id)
     {
-
+        $student = Student::where('student_id',$student_id)->update([
+            ['name'=>$name],
+            ['surname'=>$surname],
+            ['patronymic'=>$patronymic],
+            ]);
     }
 
-    public function excludeStudent($id)
+    public function excludeStudent($id, $dateOfExlude)
     {
-        //todo добавить дату в end_date с помощью этой функции
+        $student = Student::where('id',$id)->update(['end_date' => $dateOfExlude]);
     }
 
 

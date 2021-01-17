@@ -38,18 +38,30 @@ class MajorController extends Controller
         return view('majors', compact('majors'));
     }
 
-    public function closeMajor($majorId)
+    public function closeMajor($name, $endDate)
     {
-        //todo добавить дату в end_date курсу с помощью этой функции
-    }
-
-    public function majorCreate() // todo
-    {
+        $major = Major::where('name',$name)->update(['end_date' => $endDate]);
 
     }
 
-    public function majorUpdate()//todo
+    public function majorCreate($name, $startDate, $facultyName)
     {
+        $major = new Major();
 
+        $faculty = Faculty::where('name', $facultyName)->get(['faculty_id']);
+        //todo добавить проверку на повтор данных
+        $major->save([
+            ['$name'=>$name],
+            ['$start_date'=>$startDate],
+            ['faculty_id'=>$faculty],
+        ]);
+    }
+
+    public function majorUpdate($majorId, $name, $startDate)
+    {
+        $major = Major::where('id',$majorId)->update([
+            ['name'=>$name],
+            ['start_date'=>$startDate]
+        ]);
     }
 }

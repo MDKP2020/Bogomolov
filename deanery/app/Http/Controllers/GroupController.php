@@ -56,7 +56,7 @@ class GroupController extends Controller
     }
 
     public function transferToNextCourseAll() { //todo
-        //$дата перевода
+
     }
 
     public function transferToNextCourse($groupId) { //todo

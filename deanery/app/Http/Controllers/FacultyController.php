@@ -35,13 +35,19 @@ class FacultyController extends Controller
     }
 
     public function createFaculty() //todo
-    {}
+    {
+
+    }
 
     public function updateFaculty($facultyId) //todo
-    {}
+    {
+
+    }
 
     public function closeFaculty($faultyId) //todo
-    {}
+    {
+
+    }
 
 
 }
