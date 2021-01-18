@@ -19,19 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deanery/resources/views/student.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deanery/resources/views/student_edit.blade.php" afterDir="false" />
+    <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="Страничка студента и редактирования студента.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/fevt.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/fevtedit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/group.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/groupedit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin4.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin4edit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prinedit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/student.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/student.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/student_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/student_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -250,6 +242,7 @@
       <workItem from="1608167305261" duration="90000" />
       <workItem from="1608167456100" duration="973000" />
       <workItem from="1610741319461" duration="14034000" />
+      <workItem from="1611004136855" duration="9588000" />
     </task>
     <task id="LOCAL-00001" summary="добавлена стартовая страница. убраны файлы из гитигнора">
       <created>1600936287722</created>
@@ -349,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607122347435</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Страничка студента и редактирования студента.">
+      <created>1610931935722</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610931935722</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,13 +380,18 @@
     <MESSAGE value="переделана бд.&#10;добавлена функция getall в контроллер студентов" />
     <MESSAGE value="обновлена бд, хтмл пофикшен." />
     <MESSAGE value="добвлена связь группа-&gt;курс&#10;убраны лишние контроллеры&#10;добавлен файл с локальными данными дб" />
-    <option name="LAST_COMMIT_MESSAGE" value="добвлена связь группа-&gt;курс&#10;убраны лишние контроллеры&#10;добавлен файл с локальными данными дб" />
+    <MESSAGE value="Страничка студента и редактирования студента." />
+    <option name="LAST_COMMIT_MESSAGE" value="Страничка студента и редактирования студента." />
   </component>
   <component name="WindowStateProjectService">
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1610923074340">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1050@0.0.1920.1050" timestamp="1610923074340" />
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2" timestamp="1610931942875">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1610931942875" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1610929807528">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

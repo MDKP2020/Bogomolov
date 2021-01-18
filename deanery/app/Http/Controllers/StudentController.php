@@ -31,24 +31,22 @@ class StudentController extends Controller
 
     public function studentPage($faculty, $major, $group, $student) //todo добавить сортировку по времени
     {
-        $students = Student::where('group_id', $group)->get();
         $faculty_tab = Faculty::where('faculty_id', $faculty)->first();
         $major_tab = Major::where('major_id', $major)->first();
         $group_tab = Group::where('group_id', $group)->first();
         $student_info = Student::where('student_id', $student)->first();
 
-        return view('student', compact('faculty_tab', 'major_tab', 'group_tab', 'students', 'student_info'));
+        return view('student', compact('faculty_tab', 'major_tab', 'group_tab', 'student_info'));
     }
 
     public function studentEdit($faculty, $major, $group, $student)
     {
-        $students = Student::where('group_id', $group)->get();
         $faculty_tab = Faculty::where('faculty_id', $faculty)->first();
         $major_tab = Major::where('major_id', $major)->first();
         $group_tab = Group::where('group_id', $group)->first();
         $student_info = Student::where('student_id', $student)->first();
 
-        return view('student_edit', compact('faculty_tab', 'major_tab', 'group_tab', 'students', 'student_info'));
+        return view('student_edit', compact('faculty_tab', 'major_tab', 'group_tab', 'student_info'));
     }
 
     public function studentByDate($date) { //todo переместить в indexPage
@@ -74,16 +72,28 @@ class StudentController extends Controller
             ['$start_date'=>$start_date],
             ['group_id'=>$group],
         ]);
+
         return redirect()->route('student.index');
     }
 
-    public function studentUpdate($student_id, $name, $surname, $patronymic)
+    public function studentUpdate($faculty, $major, $group, $student, Request $req)
     {
-        Student::where('student_id',$student_id)->update([
-            ['name'=>$name],
-            ['surname'=>$surname],
-            ['patronymic'=>$patronymic],
-        ]);
+        Student::where('student_id', $student)->update(array(
+            'name'=>$req->input('name'),
+            'surname'=>$req->input('surname'),
+            'patronymic'=>$req->input('patronymic')
+        ));
+
+        return redirect()->route('student.page', array($faculty, $major, $group, $student));
+    }
+
+    public function studentDelete($faculty, $major, $group, $student)
+    {
+        $student = Student::where('student_id', $student);
+        $student->dropForeign(['group_id']);
+        $student->delete();
+
+        return redirect()->route('students.index', array($faculty, $major, $group));
     }
 
     public function excludeStudent($id, $dateOfExlude)

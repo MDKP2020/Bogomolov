@@ -11,7 +11,7 @@
                 </div>
                 <ul class="list-group list-group-flush m-2">
                     <li class="list-group-item user-select-none">
-                        <a class="text-dark" href="/faculties">{{$faculty_tab->name}}</a>
+                        <a class="text-dark" href="/faculties">ФЭиВТ</a>
                     </li>
                     <li class="list-group-item user-select-none">
                         <a class="text-dark" href="/{{$faculty_tab->faculty_id}}/majors">{{$major_tab->name}}</a>
@@ -30,15 +30,15 @@
                     <div class="container d-flex flex-column m-2 mt-3">
                         <div class="form-group">
                             <label for="student_surname" class="font-weight-bold">Фамилия</label>
-                            <input type="text" class="form-control" id="student_surname" value="{{$student_info->surname}}" disabled>
+                            <input type="text" class="form-control" name="surname" value="{{$student_info->surname}}" disabled>
                         </div>
                         <div class="form-group">
                             <label for="student_name" class="font-weight-bold">Имя</label>
-                            <input type="text" class="form-control" id="student_name" value="{{$student_info->name}}" disabled>
+                            <input type="text" class="form-control" name="name" value="{{$student_info->name}}" disabled>
                         </div>
                         <div class="form-group">
                             <label for="student_patronymic" class="font-weight-bold">Отчество</label>
-                            <input type="text" class="form-control" id="student_patronymic" value="{{$student_info->patronymic}}" disabled>
+                            <input type="text" class="form-control" name="patronymic" value="{{$student_info->patronymic}}" disabled>
                         </div>
                     </div>
                 </div>
