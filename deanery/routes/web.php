@@ -32,12 +32,9 @@ Route::get('/{faculty}/{major}/groups/{course}', [GroupController::class, 'getBy
 
 Route::get('/{faculty}/{major}/{group}', [StudentController::class, 'indexPage'])->name('students.index');
 
-Route::get('/{faculty}/{major}/{group}/edit', [StudentController::class, 'editPage'])->name('students.index');
+Route::get('/{faculty}/{major}/{group}/{student}', [StudentController::class, 'studentPage'])->name('student.index');
 
-Route::get('/{faculty}/{major}/{group}/{student}', [StudentController::class, 'indexPage'])->name('student.index');
+Route::get('/{faculty}/{major}/{group}/{student}/edit', [StudentController::class, 'studentEdit'])->name('student.edit');
 
 //todo вывод по дате
-//Route::get('/fevt/prin/4/{id}', [GroupController::class, 'groupPage']);
-//
-//Route::get('/fevt/prin/4/{id}/edit', [GroupController::class, 'edit']);
 

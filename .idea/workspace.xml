@@ -20,26 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d823cfa-2ddf-4026-8428-070720ed1150" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deanery/resources/views/student.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deanery/resources/views/student_edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/.env" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/FacultyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/GroupController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/MajorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/MajorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/faculties.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/groups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/groups.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/resources/views/majors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/majors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/fevt.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/fevtedit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/resources/views/group.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/groupedit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin4.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prin4edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deanery/resources/views/prinedit.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/deanery/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deanery/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/deanery/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -388,5 +381,15 @@
     <MESSAGE value="обновлена бд, хтмл пофикшен." />
     <MESSAGE value="добвлена связь группа-&gt;курс&#10;убраны лишние контроллеры&#10;добавлен файл с локальными данными дб" />
     <option name="LAST_COMMIT_MESSAGE" value="добвлена связь группа-&gt;курс&#10;убраны лишние контроллеры&#10;добавлен файл с локальными данными дб" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1610923074340">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1050@0.0.1920.1050" timestamp="1610923074340" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1610929807528">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1610929807528" />
   </component>
 </project>

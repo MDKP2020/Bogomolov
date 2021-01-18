@@ -15,13 +15,6 @@ use \Illuminate\Contracts\View\Factory;
 class StudentController extends Controller
 {
     /**
-     *
-     */
-    public function studentPage($id) {
-        return view('student.index', ['student' => Student::findOrFail($id)]);
-    }
-
-    /**
      * Показать список всех студентов.
      *
      * @return Response|Factory
@@ -33,17 +26,29 @@ class StudentController extends Controller
         $major_tab = Major::where('major_id', $major)->first();
         $group_tab = Group::where('group_id', $group)->first();
 
-        return view('student', compact('faculty_tab', 'major_tab', 'group_tab', 'students'));
+        return view('group', compact('faculty_tab', 'major_tab', 'group_tab', 'students'));
     }
 
-    public function editPage($faculty, $major, $group)
+    public function studentPage($faculty, $major, $group, $student) //todo добавить сортировку по времени
     {
         $students = Student::where('group_id', $group)->get();
         $faculty_tab = Faculty::where('faculty_id', $faculty)->first();
         $major_tab = Major::where('major_id', $major)->first();
         $group_tab = Group::where('group_id', $group)->first();
+        $student_info = Student::where('student_id', $student)->first();
 
-        return view('groupedit', compact('faculty_tab', 'major_tab', 'group_tab', 'students'));
+        return view('student', compact('faculty_tab', 'major_tab', 'group_tab', 'students', 'student_info'));
+    }
+
+    public function studentEdit($faculty, $major, $group, $student)
+    {
+        $students = Student::where('group_id', $group)->get();
+        $faculty_tab = Faculty::where('faculty_id', $faculty)->first();
+        $major_tab = Major::where('major_id', $major)->first();
+        $group_tab = Group::where('group_id', $group)->first();
+        $student_info = Student::where('student_id', $student)->first();
+
+        return view('student_edit', compact('faculty_tab', 'major_tab', 'group_tab', 'students', 'student_info'));
     }
 
     public function studentByDate($date) { //todo переместить в indexPage
@@ -72,13 +77,13 @@ class StudentController extends Controller
         return redirect()->route('student.index');
     }
 
-    public function studentUpdate($name, $surname, $patronymic, $student_id)
+    public function studentUpdate($student_id, $name, $surname, $patronymic)
     {
-        $student = Student::where('student_id',$student_id)->update([
+        Student::where('student_id',$student_id)->update([
             ['name'=>$name],
             ['surname'=>$surname],
             ['patronymic'=>$patronymic],
-            ]);
+        ]);
     }
 
     public function excludeStudent($id, $dateOfExlude)
